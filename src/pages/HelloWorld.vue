@@ -89,23 +89,22 @@
 
             <b-alert show> Hello {{ name }}! </b-alert>
          <Carousel></Carousel>
+            <product-list></product-list>
 
         </div>
     </div>
 </template>
 
 <script>
-    import Carousel from "./carousel";
+    import Carousel from "../components/carousel"
+    import productList from '../components/product/ProductList'
 export default {
   name: 'HelloWorld',
-    components: {Carousel},
+    components: {Carousel, productList},
     props: {
     msg: String,
       isActiveSidebar: false
   },
-    comments: {
-      Carousel: Carousel
-    },
     methods : {
       onClickToggle : function () {
           this.isActiveSidebar = !this.isActiveSidebar;
