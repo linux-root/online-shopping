@@ -1,4 +1,4 @@
-import Home from '../pages/HelloWorld'
+import Home from '../pages/Home'
 
 export default {
     path: '/',
