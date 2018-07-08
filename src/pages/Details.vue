@@ -1,9 +1,14 @@
 <template>
-    <transition name="custom" enter-active-class="animated zoomIn">
+    <div>
+        <router-link to="/">
+        <button type="button" class="btn btn-info">
+            Quay lại
+        </button>
+        </router-link>
         <div>
             <product-details :product="product" :isAdding="true"></product-details>
         </div>
-    </transition>
+    </div>
 </template>
 
 <script>

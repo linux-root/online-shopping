@@ -12,7 +12,7 @@
             <h4>{{product.name}}</h4>
           </div>
           <div class="product__price-cart">
-            ${{product.price}}
+            {{product.price}}
           </div>
         </div>
       </router-link>

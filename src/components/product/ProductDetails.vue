@@ -15,7 +15,7 @@
             </p>
           </div>
           <div class="product-details__price-cart">
-            <p>${{product.price}}</p>
+            <p class="text-danger"> Giá {{product.price}} 000 VND</p>
           </div>
         </div>
       </div>
