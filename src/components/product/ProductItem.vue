@@ -16,22 +16,14 @@
           </div>
         </div>
       </router-link>
-      <div class="product__action">
-        <product-button :product="product"></product-button>
-        <button class="button"><i class="fa fa-cart-plus"></i> Add to Cart</button>
-      </div>
     </div>
   </div>
 </template>
 
 <script>
-  import ProductButton from './ProductButton.vue'
   export default {
     name: 'product-item',
-    props: ['product'],
-    components: {
-      'product-button': ProductButton
-    }
+    props: ['product']
   }
 </script>
 

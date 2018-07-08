@@ -12,22 +12,42 @@
     <!-- Web fonts -->
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400italic,600,700%7COpen+Sans:300,400,400italic,600,700">
 
-    <!-- Page JS Plugins CSS -->
-    <link rel="stylesheet" href="../src/assets/js/plugins/slick/slick.min.css">
-    <link rel="stylesheet" href="../src/assets/js/plugins/slick/slick-theme.min.css">
-
     <!-- Bootstrap and OneUI CSS framework -->
-    <link rel="stylesheet" href="../src/assets/css/bootstrap.min.css">
-    <link rel="stylesheet" id="css-main" href="../src/assets/css/oneui.css">
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <link rel="stylesheet" id="css-main" href="/static/css/oneui.css">
 
     <title>online-shopping</title>
   </head>
   <body>
-  <div id="app"></div>
-    <!-- built files will be auto injected -->
 
+<script>
+    window.fbAsyncInit = function() {
+        FB.init({
+            appId            : '217234975426616',
+            autoLogAppEvents : true,
+            xfbml            : true,
+            version          : 'v3.0'
+        });
+    };
 
-  <script src="../src/assets/js/plugins/slick/slick.min.js"></script>
+    (function(d, s, id){
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {return;}
+        js = d.createElement(s); js.id = id;
+        js.src = "https://connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+<!-- Load Facebook SDK for JavaScript -->
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
+      fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
 
+<div id="app"></div>
   </body>
 </html>

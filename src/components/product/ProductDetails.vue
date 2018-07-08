@@ -16,7 +16,6 @@
           </div>
           <div class="product-details__price-cart">
             <p>${{product.price}}</p>
-            <product-button :product="product"></product-button>
           </div>
         </div>
       </div>
@@ -25,12 +24,8 @@
 </template>
 
 <script>
- import ProductButton from './ProductButton'
   export default {
-    props: ['product'],
-    components: {
-      'product-button': ProductButton
-    }
+    props: ['product']
   }
 </script>
 

@@ -1,71 +1,19 @@
 <template>
   <div id="app" class="wrapper">
-    <!-- Sidebar  -->
-    <nav id="sidebar" v-bind:class="{active: isActiveSidebar}">
-      <div class="sidebar-header">
-        <h3></h3>
-      </div>
-
-      <ul class="list-unstyled components">
-        <p>Dummy Heading</p>
-        <li class="active">
-          <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
-          <ul class="collapse list-unstyled" id="homeSubmenu">
-            <li>
-              <a href="#">Home 1</a>
-            </li>
-            <li>
-              <a href="#">Home 2</a>
-            </li>
-            <li>
-              <a href="#">Home 3</a>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a href="#">About</a>
-        </li>
-        <li>
-          <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Pages</a>
-          <ul class="collapse list-unstyled" id="pageSubmenu">
-            <li>
-              <a href="#">Page 1</a>
-            </li>
-            <li>
-              <a href="#">Page 2</a>
-            </li>
-            <li>
-              <a href="#">Page 3</a>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a href="#">Portfolio</a>
-        </li>
-        <li>
-          <a href="#">Contact</a>
-        </li>
-      </ul>
-    </nav>
-
     <!-- Page Content  -->
     <div id="content">
-
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
 
           <button type="button" id="sidebarCollapse" v-on:click="onClickToggle" class="btn btn-info">
-            <i class="fas fa-align-left"></i>
-            <span>Danh sách sản phẩm</span>
-          </button>
-          <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fas fa-align-justify"></i>
+
+            <span><i class="si si-basket"></i>Danh mục sản phẩm</span>
           </button>
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="nav navbar-nav ml-auto">
               <li class="nav-item active">
-                <a class="nav-link" href="#">Trang chủ</a>
+                <router-link to="/"  class="nav-link">Trang chủ</router-link>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Fanpage</a>
@@ -81,8 +29,14 @@
         </div>
       </nav>
 
-      <h2> Collapsible Sidebar Using Bootstrap 4</h2>
-      <Home></Home>
+      <h2>lol<i class="fa fa-battery-0 fa-4x"></i></h2>
+      <router-view></router-view>
+      <!-- Your customer chat code -->
+      <div class="fb-customerchat"
+           page_id="1406359566327604"
+           logged_in_greeting="Hi! How can we help you?"
+           logged_out_greeting="Hi! How can we help you?">
+      </div>
 
     </div>
   </div>
