@@ -26,8 +26,8 @@
       <!-- Your customer chat code -->
       <div class="fb-customerchat"
            page_id="1406359566327604"
-           logged_in_greeting="Hi! How can we help you?"
-           logged_out_greeting="Hi! How can we help you?">
+           logged_in_greeting="Xin chào, chúng tôi có thể giúp gì cho quý khách ạ. Xin để lại tin nhắn"
+           logged_out_greeting="Xin chào, chúng tôi có thể giúp gì cho quý khách ạ. Xin để lại tin nhắn">
       </div>
 
     </div>
