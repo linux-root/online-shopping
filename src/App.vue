@@ -22,6 +22,7 @@
           </div>
         </div>
       </nav>
+      <h2 class="text-amethyst">Hello world</h2>
       <router-view></router-view>
       <!-- Your customer chat code -->
       <div class="fb-customerchat"
