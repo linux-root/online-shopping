@@ -17,11 +17,13 @@
     export default {
         created() {
             if (!this.product.name) {
+                console.log('run dispatch product by Id in detail')
                 this.$store.dispatch('productById', this.$route.params['id'])//load data from server if in store doesn't have this product (in case we go to this route directly)
             }
         },
         computed: {
              product(){
+                 console.log(this.$store.getters.productById(this.$route.params['id']))
                  return this.$store.getters.productById(this.$route.params['id'])
              }
         }

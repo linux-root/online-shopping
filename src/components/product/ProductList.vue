@@ -1,16 +1,4 @@
 <template>
-    <div class="col-lg-8">
-        <!-- Main Dashboard Chart -->
-        <div class="block">
-            <div class="block-header">
-                <ul class="block-options">
-                    <li>
-                        <button type="button" data-toggle="block-option" data-action="refresh_toggle" data-action-mode="demo"><i class="si si-refresh"></i></button>
-                    </li>
-                </ul>
-                <h3 class="block-title">San Pham</h3>
-            </div>
-            <div class="block-content block-content-full bg-gray-lighter text-center">
                 <div>
                     <div class="products">
                         <div class="container">
@@ -20,10 +8,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <!-- END Main Dashboard Chart -->
-    </div>
 </template>
 
 <script>
@@ -33,11 +17,13 @@
         name: 'product-list',
         created() {
             if (this.products.length === 0) {
+                console.log('allProducts action')
                 this.$store.dispatch('allProducts') //this call the allProducts Action, NOT getter
+                console.log(this.products) //this is computed property, not the data property
             }
         },
-        computed: {
-            products() {
+        computed : {
+            products(){
                 return this.$store.getters.allProducts
             }
         },
