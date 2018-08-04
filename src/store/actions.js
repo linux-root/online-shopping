@@ -15,7 +15,7 @@ import {
     ALL_MANUFACTURERS_SUCCESS
 } from './mutation-types'
 
-export const API_BASE = 'http://localhost:3000/api/v1'
+export const API_BASE = 'https://damp-scrubland-52881.herokuapp.com/api/v1'
 
 export const productActions = {
     allProducts ({commit}){
