@@ -6,18 +6,13 @@
                     indicators
                     background="#ababab"
                     :interval="2000"
-                    img-width="240"
-                    img-height="240"
                     v-model="slide"
                     @sliding-start="onSlideStart"
                     @sliding-end="onSlideEnd"
         >
-            <b-carousel-slide img-src="/static/img/carosuel/slide_img3.png"></b-carousel-slide>
-            <b-carousel-slide img-src="/static/img/carosuel/slide_img1.jpg"></b-carousel-slide>
-            <b-carousel-slide img-src="/static/img/carosuel/slide_img2.jpg"></b-carousel-slide>
-
+            <b-carousel-slide img-src="../../static/img/products/product-intro1.png" ></b-carousel-slide>
+            <b-carousel-slide img-src="../../static/img/products/product-intro2.png"></b-carousel-slide>
         </b-carousel>
-
     </div>
 </template>
 <script>

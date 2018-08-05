@@ -4,11 +4,10 @@
       <div class="row">
         <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 product-details__image">
           <img
-            class="img-responsive" :src="product.image" alt="">
+            class="img-responsive" :src="productAbsoluteImageUrl(product.image)" alt="">
         </div>
         <div class="col-lg-8 col-md-8 col-sm-6 col-xs-12 product-details__info">
           <div class="product-details__description">
-            <small>{{product.manufacturer && product.manufacturer.name}}</small>
             <h3>{{product.name}}</h3>
             <p>
               {{product.description}}
@@ -24,7 +23,18 @@
 </template>
 
 <script>
+  import * as config from '../../config'
   export default {
+      data() {
+          return {
+              BACKEND_HOST: config.BACKEND_HOST
+          }
+      },
+      methods : {
+          productAbsoluteImageUrl(relativeUrl){
+              return this.BACKEND_HOST + relativeUrl
+          }
+      },
       props:['product']
   }
 </script>
