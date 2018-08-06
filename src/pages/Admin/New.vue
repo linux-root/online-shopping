@@ -1,5 +1,5 @@
 <template>
-  <product-form @save-product="addProduct" :model="model" :manufacturers="manufacturers"></product-form>
+  <product-form @save-product="addProduct" :model="model"></product-form>
 </template>
 
 <script>
@@ -8,14 +8,6 @@
     data () {
       return {
         model: {}
-      }
-    },
-    created () {
-      this.$store.dispatch('allManufacturers')
-    },
-    computed: {
-      manufacturers () {
-        return this.$store.getters.allManufacturers
       }
     },
     methods: {

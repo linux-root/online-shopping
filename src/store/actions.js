@@ -1,5 +1,4 @@
 import axios from 'axios'
-
 import {
     ADD_PRODUCT,
     ADD_PRODUCT_SUCCESS,
@@ -32,9 +31,17 @@ export const productActions = {
         })
     },
     addProduct ({commit}, payload) {
-    commit(ADD_PRODUCT)
-    // Create a new product via API
-    axios.post(`${API_BASE}/products`, payload).then(response => {
+        commit(ADD_PRODUCT);
+       let formData = new FormData();
+        formData.append('image', payload.file);
+
+        var product = JSON.stringify(payload);
+        formData.append('product', product);
+    axios.post(`${API_BASE}/products`, formData, {
+        headers: {
+            'Content-Type': 'multipart/form-data'
+        }
+    }).then(response => {
         commit(ADD_PRODUCT_SUCCESS, response.data)
     })}
     ,
