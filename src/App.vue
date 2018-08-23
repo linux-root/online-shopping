@@ -151,7 +151,7 @@
         </main>
         <!-- END Main Container -->
         <div class="fb-customerchat"
-             page_id="1406359566327604"
+             page_id="551298251956658"
              logged_in_greeting="Xin chào, chúng tôi có thể giúp gì cho quý khách ạ. Xin để lại tin nhắn"
              logged_out_greeting="Xin chào, chúng tôi có thể giúp gì cho quý khách ạ. Xin để lại tin nhắn">
         </div>
@@ -162,6 +162,9 @@
             <div class="pull-left">
                 <a class="font-w600 text-primary-lighter" href="tel:0969587587">Điện thoại liên hệ: Mr.Duy -
                     0969587587</a>
+            </div>
+            <div class="pull-right">
+                <img src="../public/static/img/online-gov.png"/>
             </div>
         </footer>
         <!-- END Footer -->
