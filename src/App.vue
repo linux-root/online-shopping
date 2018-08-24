@@ -158,12 +158,33 @@
 
         <!-- Footer -->
         <footer id="page-footer" class="content-mini content-mini-full font-s12 bg-primary-dark clearfix">
-            <i class="pull-left fa fa-shopping-bag fa-2x text-primary-light"></i><span class="text-amethyst-light">  HỆ THỐNG CỬA HÀNG</span><br>
             <div class="pull-left">
-                <a class="font-w600 text-primary-lighter" href="tel:0969587587">Điện thoại liên hệ: Mr.Duy -
-                    0969587587</a>
+                <i class="pull-left fa fa-shopping-bag fa-2x text-primary-light"></i><span class="text-amethyst-light">  HỆ THỐNG CỬA HÀNG</span><br><br>
+                <span class="font-w600 text-primary-lighter" ><i class="fa fa-home" style="padding-right: 3pt"></i>Chi nhánh Hà Nội: this is address</span><br>
+                <span class="font-w600 text-primary-lighter" ><i class="fa fa-home" style="padding-right: 3pt"></i>Chi nhánh TP HCM: this is another address</span><br>
+                <span class="font-w600 text-primary-lighter" ><i class="fa fa-home" style="padding-right: 3pt"></i>Chi nhánh Campuchia: this is one anohter address</span><br>
             </div>
+
+
+
+            <div style="padding-left: 200px">
+                <span class="text-primary-lighter">  Đối tác vận chuyển</span><br>
+                <span style="padding-right: 7pt"><img src="../public/static/img/vnpost.png"/></span>
+                <span style="padding-right: 7pt"><img src="../public/static/img/viettelpost.png"/></span>
+                <span style="padding-right: 7pt"><img src="../public/static/img/giaohangtietkiem.png"/></span>
+                <span style="padding-right: 7pt"><img src="../public/static/img/ghn.png"/></span>
+            </div>
+
             <div class="pull-right">
+                <h4 class="text-amethyst-light">Kết nối với Shop</h4><br>
+
+                <span>
+                    <a style="padding-right: 7pt" href="/"><i class="fa fa-4x fa-facebook-square"></i></a>
+                    <a style="padding-right: 7pt" href="https://www.facebook.com/duynhatcomvn-551298251956658/"><i class="fa fa-4x fa-youtube-square"></i></a>
+                    <a style="padding-right: 7pt" href="/"><i class="fa fa-4x fa-google-plus-square"></i></a>
+                    <a style="padding-right: 7pt" href="/"><i class="fa fa-4x fa-twitter-square"></i></a>
+                </span>
+                <br><br><br>
                 <img src="../public/static/img/online-gov.png"/>
             </div>
         </footer>
