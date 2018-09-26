@@ -2,9 +2,11 @@
                 <div>
                     <div class="products">
                         <div class="container">
+                            <div class="row">
                             <template v-for="product in products">
                                 <product-item :product="product"></product-item>
                             </template>
+                            </div>
                         </div>
                     </div>
                 </div>
