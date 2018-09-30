@@ -92,7 +92,7 @@
         <!-- END Sidebar -->
 
         <!-- Header -->
-        <header id="header-navbar" class="content-mini content-mini-full">
+        <header id="header-navbar" class="content-mini content-mini-full" style="background-color: #C1EAF2;">
             <!-- Header Navigation Left -->
             <ul class="nav-header pull-left">
                 <li class="hidden-md hidden-lg">
@@ -103,29 +103,9 @@
                 </li>
                 <li class="hidden-xs hidden-sm">
                     <!-- Layout API, functionality initialized in App() -> uiLayoutApi() -->
-                    <button class="btn btn-default" data-toggle="layout" data-action="sidebar_mini_toggle" type="button">
-                        <i class="fa fa-ellipsis-v"></i>
+                    <button class="btn btn-info" data-toggle="layout" data-action="sidebar_mini_toggle" type="button">
+                        <span>Danh mục sản phẩm</span>
                     </button>
-                </li>
-                <li>
-                    <!-- Opens the Apps modal found at the bottom of the page, before including JS code -->
-                    <button class="btn btn-default pull-right" data-toggle="modal" data-target="#apps-modal" type="button">
-                        <i class="si si-grid"></i>
-                    </button>
-                </li>
-                <li class="visible-xs">
-                    <!-- Toggle class helper (for .js-header-search below), functionality initialized in App() -> uiToggleClass() -->
-                    <button class="btn btn-default" data-toggle="class-toggle" data-target=".js-header-search" data-class="header-search-xs-visible" type="button">
-                        <i class="fa fa-search"></i>
-                    </button>
-                </li>
-                <li class="js-header-search header-search">
-                    <form class="form-horizontal" action="base_pages_search.html" method="post">
-                        <div class="form-material form-material-primary input-group remove-margin-t remove-margin-b">
-                            <input class="form-control" type="text" id="base-material-text" name="base-material-text" placeholder="Search..">
-                            <span class="input-group-addon"><i class="si si-magnifier"></i></span>
-                        </div>
-                    </form>
                 </li>
             </ul>
             <!-- END Header Navigation Left -->
@@ -133,12 +113,20 @@
         <!-- END Header -->
 
         <!-- Main Container -->
-        <main id="main-container" style="min-height: 300px;">
+        <main id="main-container" style="min-height: 200px;">
             <!-- Page Header -->
-            <div class="content bg-image overflow-hidden" style="background-image: url('../static/img/photos/photo3@2x.jpg');">
+            <div class="content bg-image overflow-hidden" style="background-color: #C1EAF2;">
                 <div class="push-50-t push-15">
-                    <h1 class="h2 text-white animated zoomIn">Hoa Tiêu Store</h1>
-                    <h2 class="h5 text-white-op animated zoomIn">Xin chào quý khách</h2>
+                    <img src="/static/img/logo/logo-crop.png" style="height: 20%; width: 20%; margin-top: 0px;" class="h2 text-white animated zoomIn"/>
+                    <div class="js-header-search header-search search-container">
+                        <form class="form-horizontal" action="/" method="get">
+                            <div class="input-group">
+                             <span><input class="form-control" type="search" id="base-material-text" style="background-color:#FFFFFF; width: 500px" name="query" placeholder="Bạn muốn tìm gì...">
+                                <button class="btn btn-minw btn-default"><i class="si si-magnifier"></i></button>
+                             </span>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
             <!-- END Page Header -->
@@ -214,3 +202,9 @@
         }
     }
 </script>
+<style>
+    .search-container{
+        display: flex;
+        flex-direction: row;
+    }
+</style>
