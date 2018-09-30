@@ -205,6 +205,6 @@
 <style>
     .search-container{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
     }
 </style>
