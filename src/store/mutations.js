@@ -31,5 +31,12 @@ export const productMutations = {
     [PRODUCT_BY_ID_SUCCESS](state, payload){
         state.showLoader = false;
         state.product= payload;
+    },
+    [UPDATE_PRODUCT](state){
+        state.showLoader = true;
+    },
+    [UPDATE_PRODUCT_SUCCESS](state, payload){
+        state.showLoader = false;
+        this.product = payload;
     }
 }
