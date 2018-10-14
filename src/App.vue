@@ -9,11 +9,12 @@
                         <div class="text-white-op font-w700">
                             <span> <span class="glyphicon glyphicon-earphone"></span>
                                 Vinaphone:</span>
-                            <a  class="text-white-op font-w700" href="tel:0888665663"> 0888665663</a>
+                            <a class="text-white-op font-w700" href="tel:0888665663"> 0888665663</a>
                         </div>
                         <div class="phl">
-                        <span  class="text-white-op font-w700">
-                            <span class="glyphicon glyphicon-earphone"> </span>Viettel:</span><a  class="text-white-op font-w700" href="tel:0969587587"> 0969587587</a></div>
+                        <span class="text-white-op font-w700">
+                            <span class="glyphicon glyphicon-earphone"> </span>Viettel:</span><a
+                                class="text-white-op font-w700" href="tel:0969587587"> 0969587587</a></div>
                     </div>
                     <div class="push-50-t push-15">
                     <span>
@@ -48,8 +49,27 @@
                                     <div class="dropdown-divider"></div>
                                     <a class="dropdown-item" href="#">Phụ kiện công nghệ khác</a>
                                 </div>
+
+                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="http://google.com">Google</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Cục phát sóng Wifi di động</a></li>
+                                    <li><a class="dropdown-item" href="#">Đồng hồ</a></li>
+                                    <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Submenu 1</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Subsubmenu1</a></li>
+                                            <li><a class="dropdown-item" href="#">Subsubmenu1</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Submenu 2</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Subsubmenu2</a></li>
+                                            <li><a class="dropdown-item" href="#">Subsubmenu2</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
                             </li>
                         </ul>
+
                     </div>
                 </nav>
             </div>
@@ -130,4 +150,25 @@
         /*Without this, clicking will make it sticky*/
         pointer-events: none;
     }
+
+    .navbar-nav li:hover > ul.dropdown-menu {
+        display: block;
+    }
+
+    .dropdown-submenu {
+        position: relative;
+    }
+
+    .dropdown-submenu > .dropdown-menu {
+        top: 0;
+        left: 100%;
+        margin-top: -6px;
+    }
+
+    /* rotate caret on hover */
+    .dropdown-menu > li > a:hover:after {
+        text-decoration: underline;
+        transform: rotate(-90deg);
+    }
+
 </style>

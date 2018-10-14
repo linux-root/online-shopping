@@ -34,14 +34,13 @@
                         lass="form-control"
                         placeholder="Image"
                         v-model="model.image"
-                        v-validate="'required'"
                         name="image"
                         :class="{'form-control': true, 'error': errors.has('image') }"/>
                 <span class="small text-danger"
                       v-show="errors.has('image')">Image is required and must be a valid URL</span>
             </div>
 
-            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="form-group">
                     <label>Image File</label>
                     <input

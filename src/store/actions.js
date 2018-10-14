@@ -34,7 +34,6 @@ export const productActions = {
         commit(ADD_PRODUCT);
        let formData = new FormData();
         formData.append('image', payload.file);
-
         var product = JSON.stringify(payload);
         formData.append('product', product);
     axios.post(`${API_BASE}/products`, formData, {
@@ -48,7 +47,16 @@ export const productActions = {
     updateProduct ({commit}, payload) {
         commit(UPDATE_PRODUCT)
         // Update product via API
-        axios.put(`${API_BASE}/products/${payload._id}`, payload).then(response => {
+        let formData = new FormData();
+        formData.append('image', payload.file);
+
+        var product = JSON.stringify(payload);
+        formData.append('product', product);
+        axios.put(`${API_BASE}/products/${payload._id}`, formData, {
+            headers: {
+                'Content-Type': 'multipart/form-data'
+            }
+        }).then(response => {
             commit(UPDATE_PRODUCT_SUCCESS, response.data)
         })
     },
