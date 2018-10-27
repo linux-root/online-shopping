@@ -42,15 +42,6 @@
                                    data-hover="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <span class=" text-city"><i class="glyphicon glyphicon-menu-hamburger"> </i> DANH MỤC SẢN PHẨM</span>
                                 </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="#">Cục phát sóng Wifi di động</a>
-                                    <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="#">Đồng hồ</a>
-                                    <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="#">Phụ kiện công nghệ khác</a>
-                                </div>
-
-                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="http://google.com">Google</a>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="#">Cục phát sóng Wifi di động</a></li>
                                     <li><a class="dropdown-item" href="#">Đồng hồ</a></li>
