@@ -45,16 +45,10 @@
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="#">Cục phát sóng Wifi di động</a></li>
                                     <li><a class="dropdown-item" href="#">Đồng hồ</a></li>
-                                    <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Submenu 1</a>
+                                    <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Thiết bị âm thanh</a>
                                         <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="#">Subsubmenu1</a></li>
-                                            <li><a class="dropdown-item" href="#">Subsubmenu1</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Submenu 2</a>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="#">Subsubmenu2</a></li>
-                                            <li><a class="dropdown-item" href="#">Subsubmenu2</a></li>
+                                            <li><a class="dropdown-item" href="#">Loa</a></li>
+                                            <li><a class="dropdown-item" href="#">Tai nghe</a></li>
                                         </ul>
                                     </li>
                                 </ul>
